@@ -7,12 +7,13 @@ import tailwind from '../assets/tailwind.png'
 import mongodb from '../assets/mongodb.png'
 import expressjs from '../assets/expressjs.png'
 import node from '../assets/node.png'
-import cplus from '../assets/cplus.jpg'
-import java from '../assets/java.jpg'
+import cplus from '../assets/cplus.png'
+import java from '../assets/java.png'
 import kotlin from '../assets/kotlin.png'
 import firebase from '../assets/firebase.png'
-import flutter from '../assets/flutter.jpeg'
+import flutter from '../assets/flutter.png'
 import github from '../assets/github.png'
+import mysql from '../assets/mysql.png'
 
 const Experience = () => {
     const tools = [
@@ -86,6 +87,11 @@ const Experience = () => {
             id: 14,
             src: github,
             name: "GITHUB",
+        },
+        {
+            id: 15,
+            src: mysql,
+            name: "MYSQL",
         },
     ];
     return (
