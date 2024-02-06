@@ -24,6 +24,15 @@ const SocialLinks = () => {
             ),
             href: "https://github.com/ShashiniHanshani",
         },
+        {
+            id: 3,
+            child: (
+                <>
+                    Mail <HiOutlineMail size={30} />
+                </>
+            ),
+            href: "mailto:shshani0002@gmail.com",
+        },
     ];
     return (
         <div className="hidden flex-col top-[35%] left-0 fixed lg:flex">

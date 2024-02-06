@@ -5,10 +5,11 @@ import { HiArrowNarrowRight } from "react-icons/hi";
 import { Link } from "react-scroll";
 import NavBar from './NavBar';
 import SocialLinks from './SocialLinks';
+import cv from '../ShashiniHanshaniResume.pdf'
 
 const Home = () => {
     const [text] = useTypewriter({
-        words: [' Software Developer', ' Designer', ' Documentarian'],
+        words: [' Software Engineering Undergraduate', ' Software Developer', ' Documentarian'],
         loop: {},
     })
     return (
@@ -26,27 +27,48 @@ const Home = () => {
                         Software Engineering Undergraduate
                     </p> */}
                     <br />
-                    <h4 className="text-2xl sm:text-5xl   text-white">
+                    <h4 className="text-3xl sm:text-4xl   text-white">
                         I'm a
-                        <span className="text-2xl sm:text-5xl   text-blue-300">{text}</span>
+                        <span className="text-3xl sm:text-4xl   text-blue-300">{text}</span>
                         <Cursor />
                     </h4>
                     <p className="text-gray-500 py-4 max-w-md">
-                        I am committed to crafting inventive solutions in Web and Mobile Development
+                        I am committed to crafting inventive solutions in Web and Mobile Development with the passion to adapt to the advancement of technology.
+
                     </p>
-                    <div>
+                    <br />
+                    {/* <div>
+
                         <Link
-                            to="portfolio"
+                            to={cv}
+                            download="Shashini-Hanshani-CV"
+                            target="_blank"
+                            rel="noreferrer"
                             smooth
                             duration={500}
-                            className="group text-white flex items-center rounded-md bg-gradient-to-r cursor-pointer"
-                        >
+                            // className="group text-white flex items-center rounded-md bg-gradient-to-r cursor-pointer" >
+                            className="group bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center cursor-pointer">
                             Download CV
                             <span className="group-hover:rotate-90 duration-300">
                                 <HiArrowNarrowRight className="ml-1" />
                             </span>
                         </Link>
+
+                    </div> */}
+
+                    <div>
+                        <a
+                            href={cv}
+                            download="Shashini-Hanshani-CV"
+                            className="group bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center cursor-pointer"
+                        >
+                            Download CV
+                            <span className="group-hover:rotate-90 duration-300">
+                                <HiArrowNarrowRight className="ml-1" />
+                            </span>
+                        </a>
                     </div>
+
                 </div>
                 <div className='w-1/4 flex items-center justify-center px-12'>
                     <img
@@ -57,7 +79,7 @@ const Home = () => {
                 </div>
             </div>
 
-        </div>
+        </div >
     )
 }
 

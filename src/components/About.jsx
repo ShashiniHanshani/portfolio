@@ -1,6 +1,9 @@
 import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { Link } from "react-scroll";
+import sliit from '../assets/sliit.jpeg'
+import ydb from '../assets/images-5.png'
+import cv from '../ShashiniHanshaniResume.pdf'
 
 const About = () => {
     return (
@@ -27,22 +30,69 @@ const About = () => {
                 <p className="text-xl font-bold text-center mt-20 text-white">
                     Education
                 </p>
-                <p className="text-base text-center mt-5 text-white">
-                    Bachelor of Science in Information Technology specializing in Software Engineering
+                <br />
+                <div class="max-w-sm w-full lg:max-w-full lg:flex items-start item">
+                    <div className="flex flex-col items-center justify-center shadow-md rounded-lg">
+                        <img
+                            src={sliit}
 
-                </p>
-                <p className="text-base text-center mt-2 text-gray-500">
-                    Sri Lanka Institute of Information Technology , Malabe
+                            className="rounded-md items-center mt-1 h-20 w-20 mb-2 mr-5 ml-2 duration-200 hover:scale-105"
+                            style={{ alignSelf: "center" }}
+                        />
 
-                </p>
-                <p className="text-base text-center mt-2 text-gray-500">
-                    2021 - present
+                    </div>
+                    <div >
+                        <p className="text-base text-xl  text-white">
+                            Bachelor of Science in Information Technology specializing in Software Engineering
 
-                </p>
-                <div className="group mt-10 text-center text-blue-500 text-xl font-semibold">
-                    Download Curriculum Vitae
+                        </p>
+                        <p className="text-base text-xl mt-2 text-gray-500">
+                            Sri Lanka Institute of Information Technology , Malabe
+
+                        </p>
+                        <p className="text-base text-xl mt-2 text-gray-500">
+                            2021 - present
+
+                        </p>
+                    </div>
 
                 </div>
+                <br />
+                <div class="max-w-sm w-full lg:max-w-full lg:flex items-start item">
+                    <div className="flex flex-col items-center justify-center shadow-md rounded-lg">
+                        <img
+                            src={ydb}
+
+                            className="rounded-md items-center mt-1 h-20 w-20 mb-2 mr-5 ml-2 duration-200 hover:scale-105"
+                            style={{ alignSelf: "center" }}
+                        />
+
+                    </div>
+                    <div >
+                        <p className="text-base text-xl  text-white">
+                            Advanced Level Examination , Physical Science Stream
+
+                        </p>
+                        <p className="text-base text-xl mt-2 text-gray-500">
+                            Yasodara Devi Balika Vidyalaya , Gampaha
+
+                        </p>
+                        <p className="text-base text-xl mt-2 text-gray-500">
+                            2017 - 2019
+
+                        </p>
+                    </div>
+
+                </div>
+                <a
+                    href={cv}
+                    download="Shashini-Hanshani-CV">
+                    <div className="group mt-10 text-center text-blue-500 text-xl font-semibold">
+                        Download Curriculum Vitae
+
+                    </div>
+                </a>
+
 
             </div>
         </div>

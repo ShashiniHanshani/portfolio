@@ -14,8 +14,9 @@ const Contact = () => {
                 </div>
                 <div className="flex flex-col items-center">
                     <p className="text-white font-bold text-3xl py-7">Welcome! Let's connect</p>
-                    <p className="text-gray-500  text-2xl py-5">+9476 540 3380</p>
-                    <p className="text-blue-500   text-2xl py-5">shshani0002@gmail.com</p>
+                    <p className="text-gray-500  text-2xl py-5"><a href="tel:+94765403380">+9476 540 3380</a>
+                    </p>
+                    <p className="text-blue-500   text-2xl py-5"><a href="mailto:shshani0002@gmail.com">shshani0002@gmail.com</a></p>
                     <div className="flex items-center mt-5 ">
                         <svg
                             onClick={() => window.location.href = "https://github.com/ShashiniHanshani"}
