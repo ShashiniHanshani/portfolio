@@ -1,11 +1,16 @@
 import React from 'react'
 import shash_Image from '../assets/shash_Image.png'
+import { useTypewriter, Cursor } from 'react-simple-typewriter';
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { Link } from "react-scroll";
 import NavBar from './NavBar';
 import SocialLinks from './SocialLinks';
 
 const Home = () => {
+    const [text] = useTypewriter({
+        words: [' Software Developer', ' Designer', ' Documentarian'],
+        loop: {},
+    })
     return (
         <div
             name="home"
@@ -17,10 +22,15 @@ const Home = () => {
                     <h2 className="text-4xl sm:text-6xl font-bold text-white">
                         Hi, I'm Shashini Hanshani
                     </h2>
-                    <p className="text-2xl sm:text-2xl font-bold text-blue-300">
-                        <br></br>
+                    {/* <p className="text-2xl sm:text-2xl text-white">
                         Software Engineering Undergraduate
-                    </p>
+                    </p> */}
+                    <br />
+                    <h4 className="text-2xl sm:text-5xl   text-white">
+                        I'm a
+                        <span className="text-2xl sm:text-5xl   text-blue-300">{text}</span>
+                        <Cursor />
+                    </h4>
                     <p className="text-gray-500 py-4 max-w-md">
                         I am committed to crafting inventive solutions in Web and Mobile Development
                     </p>
