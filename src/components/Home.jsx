@@ -9,7 +9,7 @@ import cv from '../ShashiniHanshaniResume.pdf'
 
 const Home = () => {
     const [text] = useTypewriter({
-        words: [' Software Engineering Undergraduate', 'Mobile App Developer', ' Software Developer', ' Documentarian'],
+        words: [' Software Engineering Undergraduate', ' Mobile App Developer', ' Software Developer', ' Documentarian'],
         loop: {},
     })
     return (
